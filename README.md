@@ -1,164 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Technical Portfolio</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0b0b0b, #111);
-      color: #eaeaea;
-      scroll-behavior: smooth;
-    }
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.85);
-      backdrop-filter: blur(6px);
-      padding: 15px 10%;
-      display: flex;
-      justify-content: space-between;
-      z-index: 1000;
-      border-bottom: 1px solid #222;
-    }
-    header h1 { color: #ffcc00; font-size: 20px; }
-    nav a {
-      color: #ccc;
-      margin-left: 18px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    nav a:hover { color: #ffcc00; }
-    section {
-      padding: 100px 10% 80px;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
-    section.visible { opacity: 1; transform: translateY(0); }
-    h2 { color: #ffcc00; margin-bottom: 15px; }
-    .card {
-      background: #151515;
-      padding: 20px;
-      margin: 15px 0;
-      border-left: 4px solid #ffcc00;
-      transition: transform 0.3s ease;
-    }
-    .card:hover { transform: translateY(-6px); }
-    ul { padding-left: 18px; }
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #0b0b0b;
-      border-top: 1px solid #222;
-      color: #777;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Manikandan P | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+  }
+
+  /* NAVBAR */
+  nav {
+    width: 100%;
+    background: #000;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  nav h1 {
+    color: #ffcc00;
+    font-size: 22px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #ffcc00;
+  }
+
+  /* MAIN WRAPPER */
+  .wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 120px 20px 40px;
+  }
+
+  section {
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    padding: 30px;
+    border-left: 4px solid #ffcc00;
+  }
+
+  h2 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    line-height: 1.8;
+    padding-left: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    border-top: 1px solid #222;
+  }
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>My Portfolio</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#learning">Learning</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section id="about">
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      I am a Biotechnology student with a strong interest in technology, innovation, and interdisciplinary learning. I believe in strong coordination, teamwork, and clear communication. I work efficiently with people, manage responsibilities smoothly, and ensure tasks are executed with clarity and coordination. I am passionate about learning new technologies and applying them effectively alongside my core biotechnology background.
-    </p>
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-container">
+    <h1>Manikandan P</h1>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
   </div>
-</section>
+</nav>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="card">
-    <h3>Technical & Professional Skills</h3>
+<!-- CONTENT -->
+<div class="wrapper">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Biotechnology student with strong coordination and teamwork skills.
+      I communicate clearly, manage responsibilities effectively, and ensure
+      smooth execution of tasks. I am interested in learning technology alongside
+      my academic background.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
     <ul>
       <li>Basic Web Technologies (HTML, CSS, JavaScript)</li>
       <li>Data Handling & Documentation</li>
       <li>Research Assistance & Analysis</li>
       <li>Technology Adaptability</li>
     </ul>
-  </div>
-  <div class="card">
-    <h3>Soft Skills & Coordination</h3>
+  </section>
+
+  <section>
+    <h2>Soft Skills & Coordination</h2>
     <ul>
       <li>Excellent Coordination & Teamwork</li>
       <li>Clear Communication</li>
       <li>Leadership & Responsibility Handling</li>
       <li>Time Management & Discipline</li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section id="projects">
-  <h2>Projects / Work</h2>
-  <div class="card">
-    <h3>Academic Coordination & Event Support</h3>
-    <p><strong>Role:</strong> Coordination & Technical Support</p>
-    <p><strong>Outcome:</strong> Smooth execution of academic and co-curricular activities through proper coordination and planning.</p>
-  </div>
-  <div class="card">
-    <h3>Personal Portfolio Website</h3>
-    <p><strong>Tools:</strong> HTML, CSS, JS</p>
-    <p><strong>Outcome:</strong> Professional online presence</p>
-  </div>
-</section>
-
-<section id="learning">
-  <h2>Learning & Experience</h2>
-  <div class="card">
+  <section id="projects">
+    <h2>Projects / Work</h2>
     <ul>
-      <li>Web Development Certification</li>
-      <li>Cybersecurity Fundamentals Course</li>
-      <li>Git & Version Control Workshop</li>
+      <li>Academic coordination for college activities</li>
+      <li>Support role in events and group tasks</li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section id="contact">
-  <h2>Contact & Links</h2>
-  <div class="card">
-    <p>Email: yourname@email.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/manikandan-anilkumar-panicker-ba10b73aa" target="_blank" style="color:#ffcc00; text-decoration:none;">manikandan-anilkumar-panicker</a></p>
-    <p>GitHub: github.com/yourusername</p>
-  </div>
-</section>
+</div>
 
 <footer>
-  © 2026 | Technical Portfolio
+  © 2026 Manikandan P | Profile for College
 </footer>
-
-<script>
-  const sections = document.querySelectorAll('section');
-  const reveal = () => {
-    const trigger = window.innerHeight * 0.85;
-    sections.forEach(sec => {
-      const top = sec.getBoundingClientRect().top;
-      if (top < trigger) sec.classList.add('visible');
-    });
-  };
-  window.addEventListener('scroll', reveal);
-  reveal();
-</script>
-
-</body>
-</html>
-
-  <p>This is your portfolio website.</p>
-  <p>Add your HTML content here (About, Skills, Contact, etc.)</p>
 
 </body>
 </html>
