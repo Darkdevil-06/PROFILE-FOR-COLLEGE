@@ -22,34 +22,35 @@
   nav {
     width: 100%;
     background: #000;
-    padding: 15px 0;
     position: fixed;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #222;
   }
 
   .nav-container {
     max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 14px 20px;
   }
 
   nav h1 {
     color: #ffcc00;
     font-size: 22px;
+    margin-right: 40px; /* controls distance */
+    white-space: nowrap;
   }
 
-  nav a {
+  .nav-links a {
     color: #fff;
     text-decoration: none;
-    margin-left: 20px;
+    margin-right: 18px; /* keeps links close */
     font-size: 14px;
   }
 
-  nav a:hover {
+  .nav-links a:hover {
     color: #ffcc00;
   }
 
@@ -57,11 +58,11 @@
   .wrapper {
     max-width: 1100px;
     margin: auto;
-    padding: 120px 20px 40px;
+    padding: 110px 20px 40px;
   }
 
   section {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     background: linear-gradient(135deg, #111, #1a1a1a);
     padding: 30px;
     border-left: 4px solid #ffcc00;
@@ -92,7 +93,7 @@
 <nav>
   <div class="nav-container">
     <h1>Manikandan P</h1>
-    <div>
+    <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -142,6 +143,13 @@
   </section>
 
 </div>
+
+<footer>
+  © 2026 Manikandan P | Profile for College
+</footer>
+
+</body>
+</html>
 
 <footer>
   © 2026 Manikandan P | Profile for College
